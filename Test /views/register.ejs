@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+<h1 class=" container text-center">Sign Up</h1>
+<div class="container">
+  
+    <div class="row">
+        <div style="width:30%; margin:25px auto;">
+        <form action="/register" method="POST">
+          <div class="form-group">
+          <input class="form-control" type="text" placeholder="Username" name="username"></input>
+          </div>
+          <div class="form-group">
+          <input class="form-control" type="password" placeholder="Password" name="password"></input>
+          </div>
+          <div class="form-group">
+          <div class="form-group">
+          <input class="form-control" type="text" placeholder="Registration ID" name="regid"></input>
+          </div>
+          <select class="form-control" name="type">
+            <option value="physician">Physician</option>
+            <option value="surgeon">Surgeon</option>
+            <option value="cardiologist">Cardiologist</option>
+            <option value="orthopaedic">Orthopaedic</option>
+            <option value="allergist">Allergist</option>
+          </select>
+          </div>
+          <input class="btn btn-lg btn-primary btn-block" type="submit"></input>
+</form>
+<% include ./partials/footer %>
